@@ -1,0 +1,836 @@
+/*==================================
+Template Name: KHANA 
+Description: KHANA is One Page Restaurant HTML5 Template
+Author: Mohammad Saifur Rahman
+Version: 1.0
+====================================*/ 
+
+/* INDEX
+--------------------------------------
+0. Header Area CSS
+1. Slider Area CSS
+2. About Area CSS
+3. Our Services Area CSS
+4. Our Menu Area CSS
+5. Food Gallery Area CSS
+6. Video Testimonial CSS
+7. Testimonial Area CSS
+8. Reservation Area CSS
+9. Latest News Area CSS
+10. Contact Us Area CSS
+11. Footer Area CSS
+12. Extra CSS
+---------------------------------------- */
+
+/*==============================
+    0. Header Area CSS
+================================*/ 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700|Rancho');
+.header-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-area ul li {
+    display: inline-block;
+}
+.header-area li a {
+    display: block;
+    font-size: 16px;
+    color: #212d31;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.header-area li.logo a, .footer-area h2 {
+    font-family: 'Rancho', cursive;
+    font-size: 48px;
+    /*background: #f15f2a;*/
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0;
+    padding: 17px 30px;
+    line-height: 1;
+    margin: 0 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.header-area li a:hover, .header-area li a.active {
+    color: #f15f2a;
+}
+.header-area li.logo a:hover {
+    color: #fff;
+}
+
+/*==============================
+    1. Slider Area CSS
+================================*/ 
+.slide-bg {
+    background-image: url(../img/slide-bg.jpg);
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 470px;
+}
+.slider-area, .slider-area div {
+    height: 550px;
+}
+.single-slide-item {
+    display: table;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+}
+.single-slide-item h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.single-slide-tcell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-slide-tcell, 
+.single-slide-tcell div,
+.slider-area .owl-controls,
+.slider-area .owl-controls div, 
+.slider-area .owl-nav, 
+.slider-area .owl-nav div, 
+.slider-area .owl-dots, 
+.owl-dots div{
+    height: auto;
+}
+.slider-area .owl-dots .owl-dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f15f2a;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.slider-area .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+}
+.slider-area .owl-dot.active {
+    background: #f15f2a;
+}
+a.box-btn {
+    background: #f15f2a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+a.box-btn:hover, a.book-btn:hover {
+    box-shadow: 0 0 7px #000;
+}
+.slider-area .owl-nav div {
+    position: absolute;
+    top: 50%;
+    line-height: 40px;
+    margin-top: -20px;
+    left: 1%;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.slider-area .owl-nav .owl-next {
+    left: auto;
+    right: 1%;
+}
+.owl-nav div:hover {
+    color: #f15f2a;
+    border-color: #f15f2a;
+}
+.slider-area:hover .owl-nav .owl-prev {
+    left: 3%;
+}
+.slider-area:hover .owl-nav .owl-next {
+    right: 3%;
+}
+
+/*==============================
+    2. About Area CSS
+================================*/
+.about-bg {
+    position: relative;
+    z-index: 1;
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about-bg::after {
+    position: absolute;
+    content: "";
+    right: -30px;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    border: 15px solid #f15f2a;
+    z-index: -1;
+    border-radius: 5px;
+}
+.about-bg img {
+    border-radius: 10px;
+}
+.about-content h2 {
+    line-height: 1.4;
+    color: #212d31;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 30px 0 15px;
+}
+.about-content {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.about-us h4 {
+    color: #212d31;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.about-us h4 span {
+    display: block;
+    font-size: 70%;
+    color: 212d31;
+    margin-top: 10px;
+    opacity: .7;
+}
+/*==============================
+    3. Our Services Area CSS
+================================*/ 
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ececec;
+    line-height: 80px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #c4c4c4;
+    margin: 0 auto 30px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.service-icon:hover {
+    background-color: #f15f2a;
+    border-color: #f15f2a;
+    color: #fff;
+}
+.singl-service h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212d31;
+}
+.singl-service {
+    font-size: 15px;
+    line-height: 1.6;
+}
+/*==============================
+    4. Our Menu Area CSS
+================================*/ 
+.menu-item-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-item-list li {
+    display: block;
+    margin-bottom: 20px;
+}
+.menu-item-list li {
+    display: block;
+    border: 1px solid #f15f2a;
+    text-align: center;
+    padding: 10px 28px;
+    border-radius: 5px;
+    color: #f15f2a;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+.menu-item-list li:hover, .menu-item-list li.active {
+    background-color: #f15f2a;
+    color: #fff;
+}
+.single-menu-slider {
+    background: #f7f7fd;
+-webkit-box-shadow: 1px 2px 5px 5px rgba(238,238,243,1);
+-moz-box-shadow: 1px 2px 5px 5px rgba(238,238,243,1);
+box-shadow: 1px 2px 5px 5px rgba(238,238,243,1);
+}
+.menu-slider-text {
+    padding: 30px 30px 15px;
+}
+.single-menu-slider {
+    margin-bottom: 30px;
+}
+.menu-slider-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212d31;
+}
+.menu-slider-text span {
+    display: block;
+    color: #f15f2a;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.menu-slider .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -8%;
+    line-height: 40px;
+    margin-top: -20px;
+}
+.menu-slider .owl-nav div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+    color: #ddd;
+    border-radius: 20px;
+    margin: 0 0 0 15px;;
+    -webkit-transition: .3s;
+    transition: .3s;
+    display: inline-block;
+}
+.menu-slider .owl-nav div:hover {
+    border-color: #f15f2a;
+    color: #f15f2a;
+}
+.menu-slider .item{
+    transition: .8s;
+    -webkit-transition: .8s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    opacity: 1;
+}
+.menu-slider .item.__loading{
+    opacity: 0;
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+}
+
+/*==============================
+    5. Food Gallery Area CSS
+================================*/ 
+.food-bg-1 {
+    background-image: url(../img/gallary-1.jpg);
+}
+.food-bg-2 {
+    background-image: url(../img/gallary-2.jpg);
+}
+.food-bg-3 {
+    background-image: url(../img/gallary-3.jpg);
+}
+.food-bg-4 {
+    background-image: url(../img/gallary-4.jpg);
+}
+.food-bg-5 {
+    background-image: url(../img/gallary-6.jpg);
+}
+.food-bg-6 {
+    background-image: url(../img/gallary-5.jpg);
+}
+.single-food.small-bg {
+    height: 280px;
+}
+.single-food.large-bg {
+    height: 445px;
+}
+.food-gallery {
+    margin-left: -2%;
+}
+.single-food {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 31.334%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    z-index: 1;
+    display: table;
+    border-radius: 8px;
+}
+.single-food::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.9);
+    -webkit-transition: .3s;
+    transition: .3s;
+    overflow: hidden;
+}
+.single-food:hover::after {
+    opacity: .5;
+    visibility: visible;
+    transform: scale(1);
+}
+.food-hover {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 22px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    transform: scale(.3);
+    opacity: 0;
+    visibility: hidden;
+}
+.food-hover, .food-hover a {
+    color: #fff;
+}
+.single-food:hover .food-hover{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1)
+}
+.food-hover a {
+    padding: 30px;
+    display: inline-block;
+    font-size: 30px;
+}
+/*==============================
+    6. Video Testimonial Area CSS
+================================*/ 
+.video-bg {
+    position: relative;
+    z-index: 1;
+    height: 490px;
+}
+.video-bg::after {
+    position: absolute;
+    content: "";
+    right: 15%;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    background-image: url(../img/video-bg.jpg);
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+.single-video-testimonial img {
+    width: 100px !important;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    box-shadow: 2px 4px 7px 3px #eeeef3;
+}
+.single-video-testimonial {
+    padding: 90px 0;
+}
+.v-testi-text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.v-testi-text h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.single-video-testimonial h5 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.single-video-testimonial h5 span {
+    display: block;
+    padding-top: 10px;
+    color: #f15f2a;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+.video-testimonial-slider .owl-nav div {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 40px;
+    height: 40px;
+    background: #cccccc;
+    color: #f15f2a;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.video-testimonial-slider .owl-nav div.owl-prev {
+    right: 10%;
+}
+.video-testimonial-slider .owl-nav div:hover {
+    background-color: #f15f2a
+}
+.video-testimonial-area .owl-dots div {
+    width: 20px;
+    height: 20px;
+    background: #f15f2a;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    line-height: 40px;
+    margin-top: -20px;
+}
+.video-bg a.play-btn {
+    position: absolute;
+    z-index: 2;
+    right: 70%;
+    top: 50%;
+    height: 80px;
+    margin-top: -40px;
+}
+a.play-btn {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.video-bg i.fas {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #f15f2a;
+    border: 10px solid #ddd;
+    font-size: 25px;
+}
+/*==============================
+    7. Testimonial Area CSS
+================================*/ 
+.testimonial-bg-1 {background-image: url(../img/team1.jpg);}
+.testimonial-bg-2 {background-image: url(../img/team2.jpg);}
+.testimonial-bg-3 {background-image: url(../img/team3.jpg);}
+.testimonial-bg-4 {background-image: url(../img/team4.jpg);}
+.single-testimonial {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 280px;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.single-testimonial:hover {
+    opacity: .8;
+}
+.testimonial-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #212d31;
+}
+.testimonial-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.testimonial-content h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.testimonial-content ul li {
+    display: inline-block;
+}
+.testimonial-content li a {
+    display: block;
+    color: #bfbfbf;
+    font-size: 20px;
+    padding: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.testimonial-content li a:hover {
+    color: #f15f2a;
+}
+/*==============================
+    8. Reservation Area CSS
+================================*/ 
+.reservation-area {
+    background: url(../img/reservation-bg.jpg) #333 no-repeat scroll center center / cover;
+    position: relative;
+    z-index: 1;
+}
+.reservation-area::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: .75;
+}
+.reservation-area .section-title h2 {
+    color: #fff;
+}
+.reservation-area span.section-separator {
+    background-color: #fff;
+}
+.reservation-form input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.reservation-form input::placeholder {
+    color: #fff;
+}
+.reservation-form a.book-btn {
+    display: inline-block;
+    background: #f15f2a;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.reservation-form {
+    text-align: center;
+}
+.reservation-form span i {
+    color: #fff;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    font-size: 20px;
+}
+/*==============================
+    9. Latest News Area CSS
+================================*/ 
+.news-bg-1 {background-image: url(../img/news1.jpg);}
+.news-bg-2 {background-image: url(../img/news2.jpg);}
+.news-bg-3 {background-image: url(../img/news3.jpg);}
+.news-bg {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 210px;
+}
+.news-bg span.date {
+    background: #f15f2a;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 30px;
+    bottom: -35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+    padding: 12px;
+}
+.news-bg {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+.news-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.news-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+a.inline-btn {
+    color: #f15f2a;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/*==============================
+    10. Contact Us Area CSS
+================================*/ 
+.contact-form input {
+    background: transparent;
+    border: 1px solid #dbdbdb;
+    padding: 15px 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    resize: none;
+}
+div#map {
+    height: 300px;
+    border-radius: 10px;
+}
+/*==============================
+    11. Footer Area CSS
+================================*/ 
+.footer-area {
+    background: url(../img/footer-bg.jpg) #ddd no-repeat scroll center center / cover;
+}
+.footer-area h2 {
+    background: transparent;
+    color: #f15f2a;
+}
+.footer-area.pd-100 {
+    padding: 40px 0px 20px !important;
+}
+.footer-area, .footer-area a {
+    color: #fff;
+}
+.footer-content {
+    padding-bottom: 70px;
+}
+.copyright {
+    padding: 15px 0;
+}
+.footer-menu {
+    text-align: right;
+}
+.footer-menu li {
+    display: inline-block;
+}
+.footer-menu li a {
+    display: block;
+    padding: 10px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.footer-menu li a:hover {
+    opacity: .6;
+}
+/*==============================
+    12. Extra CSS
+================================*/ 
+.scrollTop {
+    position: fixed;
+    right: 5%;
+    bottom: 10px;
+    background-color: #f15f2a;
+    padding: 10px 15px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    transform: rotate(270deg);
+    border-radius: 5px;
+    z-index: 99;
+}
+.scrollTop a {
+  font-size: 18px;
+  color: #fff;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  z-index: 999;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+.slicknav_menu {
+	display:none;
+    border-bottom: 0px;
+}
+.slicknav_btn {
+    background-color: #f15f2a
+}
+.slicknav_menu li.logo a{
+    background: #f15f2a;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.slicknav_menu li a:hover {
+    background-color: #f15f2a;
+    color: #fff;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-area.fixed {
+    background: #f7f7fd;
+    z-index: 99;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.Switcher {
+    top: 20% !important: 
+}
+iframe#map {
+    border-radius: 15px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
