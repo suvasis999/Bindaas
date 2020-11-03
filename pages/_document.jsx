@@ -17,8 +17,7 @@ class MyDocument extends Document {
     <meta name="author" content="Saifur Rahman, SaifurPro, Saifur703" />
 
     
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    
    
 
   
